@@ -272,6 +272,10 @@ section {
   gap: 2rem;
   margin-bottom: 2rem;
   margin-top: 2rem;
+  /* added */
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .about-details-container {
@@ -303,6 +307,14 @@ section {
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
   text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.details-container:hover {
+  transform: scale(1.05); /* Slightly enlarge the card */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow effect */
+  background-color: rgb(191, 183, 191); /* Change background color to black on hover */
+  border-color: black; /* Change border color to black on hover */
+  
 }
 
 .section-container {
@@ -375,6 +387,7 @@ article .icon {
 .project-title {
   margin: 1rem;
   color: black;
+  transition: color 0.3s ease;
 }
 
 .project-btn {
